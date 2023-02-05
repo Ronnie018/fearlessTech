@@ -90,6 +90,24 @@ video {
   scroll-behavior: smooth;
 }
 
+:root,
+html,
+body {
+  z-index: -100;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #b400c5;
+  }
+  ::-webkit-scrollbar-button {
+    background-color: #b400c5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #0bafbe7c;
+    height: 50px;
+  }
+}
+
 article,
 aside,
 details,
