@@ -1,12 +1,15 @@
 ---
-import Hero from '../../components/Hero/index.astro';
+import Hero from '../../components/Home/Hero/index.astro';
+import Intro from '../../components/Home/Intro/index.astro';
+import Mission from '../../components/Home/Mission/index.astro';
+import Join from '../../components/Home/Join/index.astro';
+import Pitch from '../../components/Home/Pitch/index.astro';
 ---
 
 <style lang='scss'>
-  
   .bar {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem; 
     background-color: #000000;
     z-index: 50;
     display: flex;
@@ -37,7 +40,11 @@ import Hero from '../../components/Hero/index.astro';
   }
 </style>
 <Hero />
-<div class='bar'></div>
+<Intro />
+<Mission />
+<Join />
+<Pitch />
+
 
 <div class='bar has-text'>
   <span>© 2023 - FearlessTech - All rights reserved.</span>
